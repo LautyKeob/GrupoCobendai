@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-medium text-gray-800 hover:text-gold-600 py-2 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-gold-600 text-white font-medium rounded-md hover:bg-gold-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-600 focus:ring-opacity-50;
+  }
+  
+  .btn-primary-lg {
+    @apply px-6 py-3 bg-gold-600 text-white font-medium rounded-md hover:bg-gold-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-600 focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50;
+  }
+  
+  .btn-secondary-lg {
+    @apply px-6 py-3 bg-white text-gray-800 font-medium rounded-md hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50;
+  }
+  
+  .btn-gold-lg {
+    @apply px-6 py-3 bg-gold-600 text-white font-medium rounded-md hover:bg-gold-500 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-opacity-50;
+  }
+  
+  .btn-white-outline-lg {
+    @apply px-6 py-3 bg-transparent text-white border border-white font-medium rounded-md hover:bg-white hover:text-gray-900 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50;
+  }
+  
+  .btn-primary-mobile {
+    @apply w-full px-4 py-2 bg-gold-600 text-white font-medium rounded-md hover:bg-gold-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-600 focus:ring-opacity-50 text-center;
+  }
+  
+  .btn-secondary-mobile {
+    @apply w-full px-4 py-2 bg-gray-100 text-gray-800 font-medium rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 flex justify-center items-center;
+  }
+  
+  .form-input {
+    @apply w-full rounded-md border-gray-300 shadow-sm focus:border-gold-600 focus:ring focus:ring-gold-200 focus:ring-opacity-50;
+  }
+  
+  .form-select {
+    @apply w-full rounded-md border-gray-300 shadow-sm focus:border-gold-600 focus:ring focus:ring-gold-200 focus:ring-opacity-50;
+  }
+  
+  .form-group {
+    @apply mb-4;
+  }
+}
